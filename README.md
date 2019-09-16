@@ -1,4 +1,4 @@
-# cs100-F2019-inclass-starter
+# cs100-F2019-inclass-solution
 
 ## Table of Contents
 
@@ -156,6 +156,7 @@ in-class programs that you will want to run. Here is the list of commands to
 type:
 
 * `gradle runExploreDataTypes`: Run the `ExploreDataTypes` program
+* `gradle -q --console plain runComputeGasMileage`: Run the `inclass.ComputeGasMileage` program
 
 ## Expected Program Output
 
@@ -176,6 +177,14 @@ Pi: 3.14159265358979
 Weight: 122.5
 ```
 
+- `gradle -q --console plain runComputeGasMileage`:
+
+```
+Enter the number of miles: 50
+Enter the gallons of fuel used: 245
+Miles per gallon: 0.20408163265306123
+```
+
 ## Automated Checks with GatorGrader
 
 All of the source code and technical writing in your repository must pass the
@@ -183,17 +192,26 @@ following checks that
 [GatorGrader](https://github.com/GatorEducator/gatorgrader) automatically
 assesses:
 
-- The ExploreDataTypes.java in src/main/java/inclass has exactly 0 of the `TODO` fragment
-- The ExploreDataTypes.java in src/main/java/inclass has exactly 1 of the `import java.util.Date` fragment
-- The file ExploreDataTypes.java exists in the src/main/java/inclass directory
-- The ExploreDataTypes.java in src/main/java/inclass has exactly 1 of the `new Date()` fragment
+- The ComputeGasMileage.java in src/main/java/inclass has at least 2 multiple-line Java comment(s)
+- The ComputeGasMileage.java in src/main/java/inclass has at least 4 single-line Java comment(s)
+- The ComputeGasMileage.java in src/main/java/inclass has exactly 0 of the `Add Your Name Here` fragment
+- The ComputeGasMileage.java in src/main/java/inclass has exactly 0 of the `TODO` fragment
+- The ComputeGasMileage.java in src/main/java/inclass has exactly 1 of the `System.out.println(` fragment
+- The ComputeGasMileage.java in src/main/java/inclass has exactly 1 of the `nextDouble` fragment
+- The ComputeGasMileage.java in src/main/java/inclass has exactly 1 of the `nextInt` fragment
+- The ComputeGasMileage.java in src/main/java/inclass has exactly 2 of the `System.out.print(` fragment
 - The ExploreDataTypes.java in src/main/java/inclass has at least 2 multiple-line Java comment(s)
 - The ExploreDataTypes.java in src/main/java/inclass has at least 2 single-line Java comment(s)
-- The ExploreDataTypes.java in src/main/java/inclass has exactly 4 of the `System.out.println(` fragment
 - The ExploreDataTypes.java in src/main/java/inclass has exactly 0 of the `Add Your Name Here` fragment
+- The ExploreDataTypes.java in src/main/java/inclass has exactly 0 of the `TODO` fragment
+- The ExploreDataTypes.java in src/main/java/inclass has exactly 1 of the `import java.util.Date` fragment
+- The ExploreDataTypes.java in src/main/java/inclass has exactly 1 of the `new Date()` fragment
+- The ExploreDataTypes.java in src/main/java/inclass has exactly 4 of the `System.out.println(` fragment
 - The command `gradle -q --console plain runExploreDataTypes` executes correctly
-- The command output has exactly 4 lines
 - The command `gradle build` executes correctly
+- The command output has exactly 4 lines
+- The file ComputeGasMileage.java exists in the src/main/java/inclass directory
+- The file ExploreDataTypes.java exists in the src/main/java/inclass directory
 
 ## Downloading Project Updates
 
