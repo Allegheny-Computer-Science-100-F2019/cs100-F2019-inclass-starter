@@ -25,7 +25,22 @@ src/main:
             MatchFileFragment --fragment "new Date()" --count 1 --exact
             MatchFileFragment --fragment "System.out.println(" --count 4 --exact
 
-# --> check that the runExploreDataTypes executes correctly and produces exactly 4 lines of output
+# --> check the source code for various characteristics
+src/main:
+    java:
+        inclass/ComputeGasMileage.java:
+            ConfirmFileExists
+            CountSingleLineComments --language Java --count 4
+            CountMultipleLineComments --language Java --count 2
+            MatchFileFragment --fragment "TODO" --count 0 --exact
+            MatchFileFragment --fragment "Add Your Name Here" --count 0 --exact
+            MatchFileFragment --fragment "System.out.println(" --count 1 --exact
+            MatchFileFragment --fragment "System.out.print(" --count 2 --exact
+            MatchFileFragment --fragment "nextInt" --count 1 --exact
+            MatchFileFragment --fragment "nextDouble" --count 1 --exact
+
+# --> check that each program builds and runs without error and
+# produces exactly the specified number of lines of output
 ExecuteCommand --command "gradle build"
 ExecuteCommand --command "gradle -q --console plain runExploreDataTypes"
 CountCommandOutput --command "gradle -q --console plain runExploreDataTypes" --count 4 --exact
