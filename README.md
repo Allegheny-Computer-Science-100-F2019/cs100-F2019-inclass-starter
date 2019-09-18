@@ -221,7 +221,7 @@ updates, then you can type this command in the main directory for this
 assignment:
 
 ```
-git remote add download git@github.com:Allegheny-Computer-Science-100-F2019/cs100-F2019-inclass-starter/
+git remote add download git@github.com:Allegheny-Computer-Science-100-F2019/cs100-F2019-inclass-starter.git
 ```
 
 You should only need to type this command once; running the command additional
