@@ -39,8 +39,25 @@ src/main:
             MatchFileFragment --fragment "nextInt" --count 1 --exact
             MatchFileFragment --fragment "nextDouble" --count 1 --exact
 
+# --> check the source code for various characteristics
+src/main:
+    java:
+        inclass/PerformStringMutation.java:
+            ConfirmFileExists
+            MatchFileFragment --fragment "TODO" --count 0 --exact
+            MatchFileFragment --fragment "Add Your Name Here" --count 0 --exact
+
+# --> check the source code for various characteristics
+src/main:
+    java:
+        inclass/CompareInputValues.java:
+            ConfirmFileExists
+            MatchFileFragment --fragment "TODO" --count 0 --exact
+            MatchFileFragment --fragment "Add Your Name Here" --count 0 --exact
+
 # --> check that each program builds and runs without error and
 # produces exactly the specified number of lines of output
 ExecuteCommand --command "gradle build"
 ExecuteCommand --command "gradle -q --console plain runExploreDataTypes"
 CountCommandOutput --command "gradle -q --console plain runExploreDataTypes" --count 4 --exact
+ExecuteCommand --command "gradle -q --console plain runPerformStringMutation"
