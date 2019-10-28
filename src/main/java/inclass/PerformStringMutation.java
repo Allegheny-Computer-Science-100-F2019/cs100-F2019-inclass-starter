@@ -7,10 +7,12 @@ package inclass;
  *
  * <p>Bugs: This program has no known bugs.
  *
- * @author Lewis and Loftus
+ * @author Add Your Name Here
  */
 
 public class PerformStringMutation {
+
+  // TODO: Make sure that you can run this program and understand its output
 
   /** The main entry point for StringMutation.
    *  The source code inside of this method will be executed when the program is
