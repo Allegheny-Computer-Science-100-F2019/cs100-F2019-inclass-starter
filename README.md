@@ -1,4 +1,4 @@
-# cs100-F2019-inclass-solution
+# cs100-F2019-inclass-starter
 
 ## Table of Contents
 
@@ -157,12 +157,14 @@ type:
 
 * `gradle runExploreDataTypes`: Run the `ExploreDataTypes` program
 * `gradle -q --console plain runComputeGasMileage`: Run the `inclass.ComputeGasMileage` program
+- `gradle runPerformStringMutation` to run the `gradle runPerformStringMutation` program
+- `gradle -q --console plain runCompareInputValues` to run the `inclass.CompareInputValues` program
 
 ## Expected Program Output
 
 As you complete the in-class programming assignments, you will see that they
 each produce different output. The following list shows the output from running
-each of the programs that you complete during class activities.
+some of the programs that you complete during class activities.
 
 - `gradle runExploreDataTypes`:
 
@@ -185,6 +187,27 @@ Enter the gallons of fuel used: 245
 Miles per gallon: 0.20408163265306123
 ```
 
+- `gradle runPerformStringMutation`:
+
+```
+> Configure project :
+Configured GatorGradle 0.4.4
+
+> Task :runPerformStringMutation
+Original string: "Change is inevitable"
+Length of string: 20
+Mutation #1: Change is inevitable, except from vending machines.
+Mutation #2: CHANGE IS INEVITABLE, EXCEPT FROM VENDING MACHINES.
+Mutation #3: CHANGX IS INXVITABLX, XXCXPT FROM VXNDING MACHINXS.
+Mutation #4: NGX IS INXVITABLX, XXCXPT F
+Mutated length: 27
+
+BUILD SUCCESSFUL in 894ms
+2 actionable tasks: 1 executed, 1 up-to-date
+```
+
+- `gradle runCompareInputValues` will produce different output depending on your input
+
 ## Automated Checks with GatorGrader
 
 All of the source code and technical writing in your repository must pass the
@@ -192,6 +215,8 @@ following checks that
 [GatorGrader](https://github.com/GatorEducator/gatorgrader) automatically
 assesses:
 
+- The CompareInputValues.java in src/main/java/inclass has exactly 0 of the `Add Your Name Here` fragment
+- The CompareInputValues.java in src/main/java/inclass has exactly 0 of the `TODO` fragment
 - The ComputeGasMileage.java in src/main/java/inclass has at least 2 multiple-line Java comment(s)
 - The ComputeGasMileage.java in src/main/java/inclass has at least 4 single-line Java comment(s)
 - The ComputeGasMileage.java in src/main/java/inclass has exactly 0 of the `Add Your Name Here` fragment
@@ -207,11 +232,16 @@ assesses:
 - The ExploreDataTypes.java in src/main/java/inclass has exactly 1 of the `import java.util.Date` fragment
 - The ExploreDataTypes.java in src/main/java/inclass has exactly 1 of the `new Date()` fragment
 - The ExploreDataTypes.java in src/main/java/inclass has exactly 4 of the `System.out.println(` fragment
+- The PerformStringMutation.java in src/main/java/inclass has exactly 0 of the `Add Your Name Here` fragment
+- The PerformStringMutation.java in src/main/java/inclass has exactly 0 of the `TODO` fragment
 - The command `gradle -q --console plain runExploreDataTypes` executes correctly
+- The command `gradle -q --console plain runPerformStringMutation` executes correctly
 - The command `gradle build` executes correctly
 - The command output has exactly 4 lines
+- The file CompareInputValues.java exists in the src/main/java/inclass directory
 - The file ComputeGasMileage.java exists in the src/main/java/inclass directory
 - The file ExploreDataTypes.java exists in the src/main/java/inclass directory
+- The file PerformStringMutation.java exists in the src/main/java/inclass directory
 
 ## Downloading Project Updates
 
@@ -241,6 +271,15 @@ help of the instructor or a student technical leader. Finally, please note that
 the [Gradle plugin](https://github.com/GatorEducator/gatorgradle) for
 [GatorGrader](https://github.com/GatorEducator/gatorgrader) will automatically
 download the newest version of GatorGrader.
+
+Please note that sometimes you may need to type the following command instead:
+
+```
+git pull download master --allow-unrelated-histories
+```
+
+After running this command in your terminal window, you may need to resolve the
+merge conflicts by interactively accepting the correct changes in Atom.
 
 ## Using Travis CI
 
