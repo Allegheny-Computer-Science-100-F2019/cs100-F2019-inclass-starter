@@ -207,6 +207,8 @@ BUILD SUCCESSFUL in 894ms
 ```
 
 - `gradle runCompareInputValues` will produce different output depending on your input
+- `gradle runComputeAverage` will produce different output depending on your input
+- `gradle runComputeMultiples` will produce different output depending on your input
 
 ## Automated Checks with GatorGrader
 
@@ -217,6 +219,8 @@ assesses:
 
 - The CompareInputValues.java in src/main/java/inclass has exactly 0 of the `Add Your Name Here` fragment
 - The CompareInputValues.java in src/main/java/inclass has exactly 0 of the `TODO` fragment
+- The ComputeAverage.java in src/main/java/inclass has exactly 0 of the `Add Your Name Here` fragment
+- The ComputeAverage.java in src/main/java/inclass has exactly 0 of the `TODO` fragment
 - The ComputeGasMileage.java in src/main/java/inclass has at least 2 multiple-line Java comment(s)
 - The ComputeGasMileage.java in src/main/java/inclass has at least 4 single-line Java comment(s)
 - The ComputeGasMileage.java in src/main/java/inclass has exactly 0 of the `Add Your Name Here` fragment
@@ -225,6 +229,8 @@ assesses:
 - The ComputeGasMileage.java in src/main/java/inclass has exactly 1 of the `nextDouble` fragment
 - The ComputeGasMileage.java in src/main/java/inclass has exactly 1 of the `nextInt` fragment
 - The ComputeGasMileage.java in src/main/java/inclass has exactly 2 of the `System.out.print(` fragment
+- The ComputeMultiples.java in src/main/java/inclass has exactly 0 of the `Add Your Name Here` fragment
+- The ComputeMultiples.java in src/main/java/inclass has exactly 0 of the `TODO` fragment
 - The ExploreDataTypes.java in src/main/java/inclass has at least 2 multiple-line Java comment(s)
 - The ExploreDataTypes.java in src/main/java/inclass has at least 2 single-line Java comment(s)
 - The ExploreDataTypes.java in src/main/java/inclass has exactly 0 of the `Add Your Name Here` fragment
@@ -239,7 +245,9 @@ assesses:
 - The command `gradle build` executes correctly
 - The command output has exactly 4 lines
 - The file CompareInputValues.java exists in the src/main/java/inclass directory
+- The file ComputeAverage.java exists in the src/main/java/inclass directory
 - The file ComputeGasMileage.java exists in the src/main/java/inclass directory
+- The file ComputeMultiples.java exists in the src/main/java/inclass directory
 - The file ExploreDataTypes.java exists in the src/main/java/inclass directory
 - The file PerformStringMutation.java exists in the src/main/java/inclass directory
 
