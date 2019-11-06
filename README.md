@@ -159,6 +159,8 @@ type:
 * `gradle -q --console plain runComputeGasMileage`: Run the `inclass.ComputeGasMileage` program
 - `gradle runPerformStringMutation` to run the `gradle runPerformStringMutation` program
 - `gradle -q --console plain runCompareInputValues` to run the `inclass.CompareInputValues` program
+- `gradle -q --console plain runComputeAverage` to run the `inclass.ComputeAverage` program
+- `gradle -q --console plain runComputeMultiples` to run the `inclass.ComputeMultiples` program
 
 ## Expected Program Output
 
